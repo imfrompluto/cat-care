@@ -1,0 +1,268 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Patua One', cursive; */
+
+h1{
+    font-family: 'Patua One', cursive;
+    font-size: 60px;
+    background: rgb(231,0,146);
+    background: linear-gradient(298deg, rgba(231,0,146,1) 0%, rgba(227,149,210,1) 40%, rgba(203,115,223,1) 71%, rgba(255,0,80,1) 100%);
+    display: inline-block;
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: .4s;
+    -webkit-text-stroke: 2px #00000033;
+}
+
+.preview{
+    text-align: center;
+}
+
+h1:hover{
+    background-position: right;
+   
+
+}
+
+body{
+    background: rgb(255,133,55);
+    background: linear-gradient(90deg, rgba(255,133,55,1) 0%, rgba(121,9,9,1) 51%, rgba(183,0,255,1) 100%);
+}
+
+.stars{
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -2 ;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.stars img{
+    position: absolute;
+}
+
+.cat{ 
+    height: 70%;
+    position: absolute;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2.5px;
+    border-style: solid;
+    box-shadow: 20px 50px 70px palevioletred;
+    transition: 1s;
+    top: 50%;
+    background-color: cornflowerblue;
+}
+
+.slideshow{
+    width: 70%;
+    height: 600px;
+    /* for the pictures with cats to align for slideshow and not the whole screen */
+    position: relative;
+    float: left;
+
+}
+
+.housing p{
+    background-color: rgba(216, 112, 147, 0.416);
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif; 
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.578);
+    border-width: 2.5px;
+    border-style: solid;
+    padding: 10px;
+
+   
+}
+
+.feeding p{
+    background-color: rgba(216, 112, 147, 0.416);
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif; 
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.578);
+    border-width: 2.5px;
+    border-style: solid;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    /* float: left; */
+    
+}
+
+.feedinginfo{
+    width: 35%;
+    margin-top: 100px;
+    padding-left: 30px;
+
+}
+
+.housinginfo{
+    float: right;
+    width: 30%;
+
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgba(255, 255, 255, 0.578);
+    -webkit-text-stroke: 1px rgba(216, 112, 147, 0.416);
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.cats{
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(50px);
+    /* font size is used to remove small gaps between images */
+    font-size: 0;
+    padding-bottom: 30px;
+    padding-top: 37px;
+    border-radius: 26px;
+    width: 80%;
+    margin: auto;
+}
+
+.housing{
+    overflow: hidden;
+}
+
+.cats img{
+    height: 200px;
+    width: calc(100% / 5 - 20px);
+    /* box sizing is used to not make the border make the image bigger */
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px solid white;
+    border-radius: 26px;
+    transition: transform .2s;
+   
+}
+
+
+
+
+.cats h4{
+    font-size:40px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    padding-top: 37px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.active{
+    transform: scale(1.5);
+}
+
+.feedingpic img{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    /* margin-left: 0px; */
+    object-fit: cover;
+    border-radius: 100px;
+    /* margin: 7px; */
+    border: 7px solid transparent;
+
+}
+.feedingpic{
+    /* background-color: aqua; */
+    width: 60%;
+    float: right;
+    margin-top: -150px;
+    padding: 30px;
+    /* margin-right: 10px ; */
+}
+
+.feedingsection{
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
+    /* font size is used to remove all the space in between inline-block things */
+    font-size: 0;
+}
+
+.feedingleft{
+    width: 30%;
+    background-color: rgba(217, 125, 156, 0.561);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    padding: 25px;
+    padding-bottom: 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* so that the padding doesnt make feedingleft bigger */
+    box-sizing: border-box;
+}
+
+.feedingleft a{
+    color: palevioletred;
+    text-decoration: none;
+    font-family: 'Patua One', cursive;
+    background-color: rgba(255, 134, 13, 0.46);
+    font-size: 20px;
+    border-radius: 4px;
+    display: block;
+    border: rgba(255, 255, 255, 0.484) 2px solid;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    transition: .5s;
+
+}
+
+.feedingleft a:hover{
+
+    background-color: rgba(245, 134, 255, 0.504);
+    border: white 2px solid;
+}
+
+
+
+.feedingright{
+    width: calc(70% - 10px);
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#foodpic{
+    width: 100%;
+    border-radius: 6px;
+    height: 400px;
+    object-fit: cover;
+    border: white 2px solid;
+    box-shadow: 10px 10px 20px #ff7ccd60;
+    margin-bottom: 20px;
+    
+}
+
+#foodp{
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.activebutton{
+    border: rgba(255, 255, 255, 0.648) 4px solid !important;
+    background-color: rgba(255, 212, 144, 0.59) !important;
+    color: rgba(225, 155, 178, 0.774)!important;
+
+}
